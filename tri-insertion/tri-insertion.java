@@ -21,9 +21,9 @@ public class TriInsertion
             tableau[j] = min; /* reposition du tableau */
         }
 
-        for (int i : tableau)
+        for (int x : tableau)
         {
-            System.out.println(i); /* Affichage du tableau trié */
+            System.out.println(x); /* Affichage du tableau trié */
         }
     }
 }
