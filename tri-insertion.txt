@@ -3,17 +3,19 @@ ALGORITHME :
 
 Trie insertion:  
 Code itératif :
+
 Declarer un tableau tab() de 0 a taille du tableau
 Declarer variable clé
 Declarer variable index
+
 Debut
 Pour a de 1 a taille du tableau :
-clé=tab(a)
-index=a
-Tant que index>0 et que clé<tab(index-1)
-tab(index)=tab(index-1)
-index=index-1 
+clé = tab(a)
+index = a
+Tant que index > 0 et que clé < tab(index-1)
+tab(index) = tab(index-1)
+index = index-1 
 Fin tant que
-tab(index-1)=clé
+tab(index-1) = clé
 Fin pour
 Fin
