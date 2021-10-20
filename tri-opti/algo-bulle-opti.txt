@@ -1,0 +1,17 @@
+Declarer tab()
+Declarer variable permuter
+Declarer variable ranger
+
+Debut
+Tant que ranger = faux
+Ranger = vrai
+Pour a de 0 à length.tab
+Si a > a+1
+Alors permuter = tab(a+1)
+tab(a+1) = tab(a)
+tab(a) = permuter
+Ranger = faux
+Fin si 
+Fin pour 
+Fin tant que 
+Fin
