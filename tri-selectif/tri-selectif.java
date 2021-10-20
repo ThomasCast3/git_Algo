@@ -27,9 +27,9 @@ public class Main
             }
         }
 
-        for (int i : tableau)
+        for (int x : tableau)
         {
-            System.out.println(i); //Affichage du tableau trié
+            System.out.println(x); //Affichage du tableau trié
         }
     }
 }
