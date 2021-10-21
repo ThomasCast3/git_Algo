@@ -29,8 +29,10 @@ public class tri_selection
                     comparaison += 1; /* tableau[b] < tableau[min] */
                     affectation += 1; /* min = b */
                 }
+                comparaison += 1; /* if (tableau[b] < tableau[min]) */
             }
-
+                comparaison += 1 /* for (int b = min; b < tableau.length; b++) */
+                    
             if (a != min) /* Si a n'est pas égal à la variable min */
             {
                 temp = tableau[a]; /* Affectation de temp à l'index a du tableau */
@@ -40,8 +42,10 @@ public class tri_selection
                 affectation += 3; /* temp = tableau[a] && tableau[a] = tableau[min] && tableau[min] = temp */
                 comparaison += 1; /* a != min */
             }
+            comparaison += 1; /* if (a != min) */ 
         }
-
+            comparaison += 1 /* for (int a = 0; a < tableau.length; a++) */
+        
         for (int x : tableau)
         {
             System.out.println(x); //Affichage du tableau trié
