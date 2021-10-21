@@ -5,9 +5,10 @@ public class Main
     public static void main(String[] args)
     {
         int[] tableau = { 47, 12, -34, 86, -2 }; /* Déclaration du tableau */
-        int min, temp;
+        int min, temp; /* Déclaration des variables */
+        
         int comparaison = 0;
-        int affectation = 0; /* Déclaration des variables */
+        int affectation = 0;
 
         for (int a = 0; a < tableau.length; a++) /* Itération dans le premier tableau */
         {
@@ -47,7 +48,7 @@ public class Main
             System.out.println(x); //Affichage du tableau trié
         }
 
-        System.out.println("Affectations: " + affectation);
-        System.out.println("Comparaisons: " + comparaison);
+        System.out.println("Affectations : " + affectation);
+        System.out.println("Comparaisons : " + comparaison);
     }
 }
