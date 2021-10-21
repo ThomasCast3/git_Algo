@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class tri_bulle_normal_stats
+public class tri_bulle_normal
 {
     public static void main(String[] args)
     {
@@ -11,41 +11,55 @@ public class tri_bulle_normal_stats
 
     public static void stat(int min, int max, int step, int nbr)
     {
-        for (int i = min; i < max; i += step)
+        int[] tableau;
+        int[] operationArray = new int[nbr];
+
+        int somme = 0;
+
+        for (int i = min; i <= max; i += step)
         {
             for (int j = 0; j < nbr; j++)
             {
-                int[] tableau = tableauAleatoire(min, max);
+                tableau = tableauAleatoire(i);
 
-                tri(tableau);
+                operationArray[j] = tri(tableau);
+
             }
+
+            for (int z : operationArray) {
+                somme += z;
+            }
+
+            float moyenne = (float) somme / operationArray.length;
+
+            System.out.println(i + " " + moyenne);
+
+            //System.out.println("i : " + i + " " + moyenne);
         }
     }
 
-    public static int[] tableauAleatoire(int min, int max)
+    public static int[] tableauAleatoire(int i)
     {
-        Random rdm = new Random();
+        Random random = new Random();
+        int[] tableau = new int[i];
 
-        int randomSizeTableau = rdm.nextInt(max - min) + min; /* Probablement + 1 */
-
-        int[] tableau = new int[randomSizeTableau];
-
-        for (int i = 0; i < randomSizeTableau; i++)
+        for (int j = 0; j < i; j++)
         {
-            tableau[i] = rdm.nextInt(100 - 1) + 1;
+            tableau[j] = random.nextInt(100);
         }
 
         return tableau;
     }
 
-    public static void tri(int[] tableau)
+    public static int tri(int[] tableau)
     {
-        /*int[] tableau = { 6, 5, 3, 1, 8, 7, 2, 4 };Déclaration du tableau */
         int b = 0;
         int temp; /* Déclaration d'une variable pour permuter les nombres */
 
         int affectation = 1;
         int comparaison = 0;
+
+        int operation = 0;
 
         while (b < tableau.length - 1) /* Tant que le tableau n'est pas trié */
         {
@@ -62,6 +76,8 @@ public class tri_bulle_normal_stats
 
                     comparaison += 1; /* tableau[j] > tableau[j + 1] */
                     affectation += 3; /* temp = tableau[j] && tableau[j] = tableau[j + 1] && tableau[j + 1] = temp */
+
+                    operation += 1;
                 }
             }
 
@@ -71,14 +87,7 @@ public class tri_bulle_normal_stats
             comparaison += 1; /*  while (b < tableau.length - 1) */
         }
 
-        for (int x : tableau)
-        {
-            //System.out.print(x + " "); /* Affichage du tableau */
-        }
-
-        //System.out.println();
-        //System.out.println("Affectations : " + affectation);
-        //System.out.println("Comparaisons : " + comparaison);
+        return operation; /* nombre "d'opérations" */
     }
 }
 
