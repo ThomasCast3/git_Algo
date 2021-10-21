@@ -7,8 +7,8 @@ public class Main
         int[] tableau = { 47, 12, -34, 86, -2 }; /* Déclaration du tableau */
         int min, temp; /* Déclaration des variables */
         
+        int affectation = 2;
         int comparaison = 0;
-        int affectation = 0;
 
         for (int a = 0; a < tableau.length; a++) /* Itération dans le premier tableau */
         {
