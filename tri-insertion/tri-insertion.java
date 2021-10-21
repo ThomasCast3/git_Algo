@@ -7,7 +7,7 @@ public class Main
         int[] tableau = { 6, 5, 3, 1, 8, 7, 2, 4 }; /* Déclaration du tableau */
         int min, j; /* Déclaration des variables */
 
-        int affectation = 0;
+        int affectation = 2;
         int comparaison = 0;
 
         for (int a = 1; a < tableau.length ; a++) /* Itération dans le tableau complet */
@@ -26,16 +26,20 @@ public class Main
                 affectation += 2;
                 comparaison += 2;
             }
-            if ( j < 0 || tableau[j - 1] <min){
-                comparaison +=2;
+
+            if ( j < 0 || tableau[j - 1] <min)
+            {
+                comparaison += 2;
             }
 
             tableau[j] = min; /* reposition du tableau */
 
             affectation += 1;
         }
-        if (a >= tableau.lenght){
-            comparaison +=1;
+
+        if (a >= tableau.lenght)
+        {
+            comparaison += 1;
         }
 
         for (int x : tableau)
