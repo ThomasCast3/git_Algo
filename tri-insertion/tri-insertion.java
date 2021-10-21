@@ -6,8 +6,9 @@ public class Main
     {
         int[] tableau = { 6, 5, 3, 1, 8, 7, 2, 4 }; /* Déclaration du tableau */
         int min, j; /* Déclaration des variables */
-        int comparaison = 0;
+
         int affectation = 0;
+        int comparaison = 0;
 
         for (int a = 1; a < tableau.length ; a++) /* Itération dans le tableau complet */
         {
@@ -36,7 +37,7 @@ public class Main
             System.out.println(x); /* Affichage du tableau trié */
         }
 
-        System.out.println("Affections " + affectation);
-        System.out.println("Comparaisons " + comparaison);
+        System.out.println("Affections : " + affectation);
+        System.out.println("Comparaisons : " + comparaison);
     }
 }
