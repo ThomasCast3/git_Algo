@@ -34,8 +34,11 @@ public class tri_bulle_opti
                     affectation += 4; /* order = false && temp = tableau[j] && tableau[j] = tableau[j + 1] && tableau[j + 1] = temp */
                     comparaison += 1; /* tableau[j] > tableau[j + 1] */
                 }
+                   comparaison += 1; /*  if (tab[j] < tab[ j + 1]) */
             }
+               comparaison += 1; /*  for (j < tableau.length - 1) */
         }
+        comparaison += 1; /*  while (!ordre) */
 
         for (int x : tableau)
         {
