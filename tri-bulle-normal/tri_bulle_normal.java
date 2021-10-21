@@ -27,6 +27,7 @@ public class tri_bulle_normal
                     comparaison += 1; /* tableau[j] > tableau[j + 1] */
                     affectation += 3; /* temp = tableau[j] && tableau[j] = tableau[j + 1] && tableau[j + 1] = temp */
                 }
+                   comparaison += 1; /*  for (j < tableau.length - 1) */
             }
 
             b++;
