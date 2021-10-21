@@ -8,7 +8,7 @@ public class TriBullesNormal
         boolean ordre = false; /* Déclaration d'un boolean qui défini la fin de l'ordre */
         int temp; /* Déclaration d'une variable pour permuter les nombres */
         
-        int affectation = 2;
+        int affectation = 1;
         int comparaison = 0;
 
         while (!ordre) /* Tant que le tableau n'est pas trié */
