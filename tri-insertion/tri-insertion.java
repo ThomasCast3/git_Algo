@@ -26,10 +26,16 @@ public class Main
                 affectation += 2;
                 comparaison += 2;
             }
+            if ( j < 0 || tableau[j - 1] <min){
+                comparaison +=2;
+            }
 
             tableau[j] = min; /* reposition du tableau */
 
             affectation += 1;
+        }
+        if (a >= tableau.lenght){
+            comparaison +=1;
         }
 
         for (int x : tableau)
