@@ -8,7 +8,7 @@ public class TriBullesOpti
         int b = 0;
         int temp; /* Déclaration d'une variable pour permuter les nombres */
 
-        int affectation = 0;
+        int affectation = 2;
         int comparaison = 0;
 
         while (b < tableau.length - 1) /* Tant que le tableau n'est pas trié */
