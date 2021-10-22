@@ -1,13 +1,13 @@
-Creer la fonction permuter avec un tableau et un index
-Creer var permut
+Creer la fonction permuter avec en parametre un tableau et un index
+declarer variable permut
 Si tableau à l'index-1 est supp à tableau à index et index-1 est different de 0
-Alors permut vaut la valeur de tableau a l'index-1
-Tableau à l'index-1 vaut tableau à index
-Et tableau à index vaut permut
+Alors permut = tableau a l'index-1
+Tableau à l'index-1 = tableau à index
+Et tableau à index = permut
 Appeler fct permuter (tableau, index-1)
 
-Fonction ranger avec un tableau et un index
-Si index est inf a la taille du tableau 
+Fonction ranger avec en parametre un tableau et un index
+Si index < a la taille du tableau 
 Alors appeler fct permuter (tableau, index)
 Appeler fct ranger (tableau, index +1)
 
