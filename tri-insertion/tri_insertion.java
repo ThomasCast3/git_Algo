@@ -12,7 +12,7 @@ public class Main
 
         for (int a = 1; a < tableau.length ; a++) /* Itération dans le tableau complet */
         {
-            min = tableau[a]; /* Affectation de min à la valeur de l'j du tableau */
+            min = tableau[a]; /* Affectation de min à la valeur de l'index j du tableau */
             j = a; /* Affectation de j à la valeur de a) */
 
             affectation += 3;
