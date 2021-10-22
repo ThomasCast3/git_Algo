@@ -7,8 +7,7 @@ Code itératif :
 Declarer un tableau tab() de 0 a taille du tableau
 Declarer variable clé
 Declarer variable index
-Declarer variable compteur
-@
+
 Debut
 Pour a de 1 a taille du tableau :
 clé = tab(a)

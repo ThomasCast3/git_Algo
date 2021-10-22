@@ -6,12 +6,13 @@ public class Main
     {
         int[] tableau = { 6, 5, 3, 1, 8, 7, 2, 4 }; /* Déclaration du tableau */
         int min, j; /* Déclaration des variables */
+
+        int affectation = 2;
         int comparaison = 0;
-        int affectation = 0;
 
         for (int a = 1; a < tableau.length ; a++) /* Itération dans le tableau complet */
         {
-            min = tableau[a]; /* Affectation de min à la valeur de l'j du tableau */
+            min = tableau[a]; /* Affectation de min à la valeur de l'index j du tableau */
             j = a; /* Affectation de j à la valeur de a) */
 
             affectation += 3;
@@ -25,18 +26,22 @@ public class Main
                 affectation += 2;
                 comparaison += 2;
             }
+                comparaison += 2;  /*  while (j > 0 && tableau[j - 1] > min) */
+            
 
             tableau[j] = min; /* reposition du tableau */
 
             affectation += 1;
         }
+            comparaison += 1; /* for (int a = 1; a < tableau.length ; a++) */
+        
 
         for (int x : tableau)
         {
             System.out.println(x); /* Affichage du tableau trié */
         }
 
-        System.out.println("Affections " + affectation);
-        System.out.println("Comparaisons " + comparaison);
+        System.out.println("Affections : " + affectation);
+        System.out.println("Comparaisons : " + comparaison);
     }
 }
