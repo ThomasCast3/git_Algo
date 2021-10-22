@@ -31,7 +31,7 @@ public class tri_selection
                 }
                 comparaison += 1; /* if (tableau[b] < tableau[min]) */
             }
-                comparaison += 1 /* for (int b = min; b < tableau.length; b++) */
+                comparaison += 1; /* for (int b = min; b < tableau.length; b++) */
                     
             if (a != min) /* Si a n'est pas égal à la variable min */
             {
