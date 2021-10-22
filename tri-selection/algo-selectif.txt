@@ -7,7 +7,7 @@ Declarer un tableau tab()
 Declarer variable  min
 Declarer variable temp
 Debut
-Pour a de 0 à taille du tableau :
+Pour a de 0 a taille du tableau :
 Affecter a à min
 Pour b de min à taille du tableau:
 Si tab(b)<tab(min)
